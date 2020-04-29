@@ -1,0 +1,25 @@
+{
+  "name": "warp",
+  "version": "0.0.1",
+  "description": "Small CSS framework for Urban Timetravel designs",
+  "scripts": {
+    "scss": "node-sass src -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbantimetravel/warp.git"
+  },
+  "keywords": [
+    "scss",
+    "framework"
+  ],
+  "author": "Urban Timetravel S.A.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urbantimetravel/warp/issues"
+  },
+  "homepage": "https://github.com/urbantimetravel/warp",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

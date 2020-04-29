@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+  }
+  
+  table.striped tr:nth-of-type(2n) {
+    background-color: $color_gray-light;
+  }
+  
+  td,
+  th {
+    vertical-align: middle;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+  
+  thead {
+    border-bottom: 2px solid $color_gray-light;
+  }
+  
+  tfoot {
+    border-top: 2px solid $color_gray-light;
+  }
