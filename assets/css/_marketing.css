@@ -1,0 +1,28 @@
+.image-text-grid {
+    display: grid;
+    grid-template-areas: "image" "text";
+    grid-gap: var(--space-m);
+    align-self: center;
+}
+
+@media (--m-up) {
+    .image-text-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "image text";
+        grid-gap: var(--space-l);
+    }
+}
+
+@media (--l-up) {
+    .image-text-grid {
+        grid-gap: var(--space-xl);
+    }
+}
+
+.image-text-grid .image {
+    grid-area: image;
+}
+
+.image-text-grid .text {
+    grid-area: text;
+}

@@ -2,9 +2,6 @@
   "name": "warp",
   "version": "0.0.1",
   "description": "Small CSS framework for Urban Timetravel designs",
-  "scripts": {
-    "scss": "node-sass src -o dist"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/urbantimetravel/warp.git"
@@ -19,7 +16,22 @@
     "url": "https://github.com/urbantimetravel/warp/issues"
   },
   "homepage": "https://github.com/urbantimetravel/warp",
+  "dependencies": {
+    "turretcss": "^5.1.0"
+  },
   "devDependencies": {
-    "node-sass": "^4.14.0"
+    "cssnano": "^4.1.0",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.0.0",
+    "postcss-import": "^12.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.14.0"
+  },
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm run build -- --verbose --watch",
+    "build": "postcss assets/css/app.css -o dist/warp.css",
+    "format": "npm run format:css",
+    "format:css": "prettier --single-quote --print-width 180 --write '*.css'"
   }
 }
