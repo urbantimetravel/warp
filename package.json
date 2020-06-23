@@ -30,7 +30,7 @@
   "scripts": {
     "start": "npm run watch",
     "watch": "npm run build -- --verbose --watch",
-    "build": "postcss assets/css/app.css -o dist/warp.css",
+    "build": "postcss assets/css/warp.css -o dist/warp.css",
     "format": "npm run format:css",
     "format:css": "prettier --single-quote --print-width 180 --write '*.css'"
   }
