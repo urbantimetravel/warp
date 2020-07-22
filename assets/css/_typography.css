@@ -38,13 +38,13 @@
    */
 
   --display-title-margin: 0.125em 0;
-  --display-title-font-family: var(--font-family-serif);
+  --display-title-font-family: var(--font-family-sans-serif);
   --display-title-font-weight: var(--font-weight-bold);
   --display-title-font-size: 1.5rem;
   --display-title-font-style: normal;
   --display-title-color: inherit;
   --display-title-line-height: var(--line-height-xxs);
-  --display-title-text-transform: none;
+  --display-title-text-transform: uppercase;
   --display-title-letter-spacing: 0;
 
   /** 

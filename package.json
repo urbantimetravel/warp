@@ -31,7 +31,13 @@
     "start": "npm run watch",
     "watch": "npm run build -- --verbose --watch",
     "build": "postcss assets/css/warp.css -o dist/warp.css",
+    "print": "postcss assets/css/print.css -o dist/print.css",
     "format": "npm run format:css",
-    "format:css": "prettier --single-quote --print-width 180 --write '*.css'"
+    "format:css": "prettier --single-quote --print-width 180 --write '*.css'",
+    "generate:documents": "npm run print && npm run generate:card && npm run generate:financial && npm run generate:letterhead && npm run generate:legal",
+    "generate:card": "weasyprint card.html card.pdf && open card.pdf",
+    "generate:financial": "weasyprint financial.html financial.pdf && open financial.pdf",
+    "generate:letterhead": "weasyprint letterhead.html letterhead.pdf && open letterhead.pdf",
+    "generate:legal": "weasyprint legal.html legal.pdf && open legal.pdf"
   }
 }

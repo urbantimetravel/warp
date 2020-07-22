@@ -33,7 +33,7 @@
   --light-900: color-mod(var(--light-800) shade(20%) saturation(+5%));
 
   /* Grey */
-  --grey: hsl(220, 10%, 40%);
+  --grey: hsl(214, 3%, 54%);
   --grey-hover: var(--grey-400);
   --grey-active: var(--grey-600);
   --grey-50: color-mod(var(--grey-100) tint(30%) saturation(+2.5%));

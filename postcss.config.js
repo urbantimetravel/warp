@@ -8,7 +8,7 @@ module.exports = {
           unresolved: 'warn'
         },
         'custom-properties': {
-          preserve: true
+          preserve: ((process.env.npm_lifecycle_event == "print") ? false : true)
         },
         'nesting-rules': true
       }
